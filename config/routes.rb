@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'posts/index'
 
   resources :posts
+  resources :users
 
   root to: "posts#index"
 
