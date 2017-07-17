@@ -12,3 +12,21 @@
 //
 //= require rails-ujs
 //= require_tree .
+//= require random_giphy_image_rails
+$(document).ready(function(){
+  // Set debug mode (for console logs)
+  RandomGiphyImageRails.debug = true;
+
+  // Testing api key by default if you don't specify one
+  RandomGiphyImageRails.data.api_key = 'd0e4ea9c95ad41bfa293f8e951a1beb7'
+;
+
+  // Class of the HTML element where you want to put the gif
+  RandomGiphyImageRails.data.element_class = 'giphyme';
+
+  // Query or tag of your random gif
+  RandomGiphyImageRails.data.query = 'harrypotter';
+
+  // Executes the random gif thing
+  RandomGiphyImageRails.giphyme();
+});

@@ -1,2 +1,12 @@
-<div class="post-container">
-</div>
+<p>
+  <h3><strong>Title:</strong></h3>
+  <h4><%= @post.title %><h4>
+</p>
+<br>
+<p>
+  <h4><strong>Description:</strong><h4>
+  <%= @post.body %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %>
+<%= link_to 'Back', posts_path %>
